@@ -1,9 +1,9 @@
 import { useState } from "react";
 import ticTacToeLogo from "../../assets/jogo-da-velha_logo.svg";
-import "./Home.scss";
+import "./Menu.scss";
 import Board from "../../components/Board";
 
-function Home() {
+function Menu() {
   const [opponentChoosed, setOpponentChoosed] = useState("");
   const [match, setMatch] = useState("");
 
@@ -71,4 +71,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Menu;
