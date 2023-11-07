@@ -1,0 +1,54 @@
+@import "../../colorsGlobal.scss";
+
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .play-tic-tac-toe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      margin-top: 10%;
+      margin-bottom: 10%;
+
+      font-family: $roboto;
+
+      text-align: center;
+      line-height: 1.5em;
+
+      .player1 {
+        color: $blue;
+      }
+
+      .player2 {
+        color: $red;
+      }
+    }
+  }
+
+  .tic-tac-toe-board {
+    width: 80%;
+    height: 50vh;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 0.1em solid $black;
+
+    .square {
+      width: 32.98%;
+      height: 32.9%;
+
+      border: 0.001em solid black;
+
+      .X {
+        color: $blue;
+      }
+    }
+  }
+}
