@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Board = () => {
   const gridSizes = [
@@ -14,8 +14,14 @@ const Board = () => {
 
   const [selectedSize, setSelectedSize] = useState("3x3");
 
+  useEffect(() => {
+    localStorage.setItem("boardSize", "3x3");
+  }, []);
+
   const handleSizeChange = (event) => {
-    setSelectedSize(event.target.value);
+    const newSize = event.target.value;
+    setSelectedSize(newSize);
+    localStorage.setItem("boardSize", newSize);
   };
 
   return (
