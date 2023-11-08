@@ -10,9 +10,10 @@ function TicTacToe() {
   const player2Name = localStorage.getItem("player2");
   const sizeBoard = localStorage.getItem("boardSize");
 
-  const [currentPlayer, setCurrentPlayer] = useState(player1Name);
+  const sizeUnity = sizeBoard.slice(0, -2);
+  const sizeTotal = sizeBoard.length === 5 ? sizeBoard.slice(0, -3) : sizeUnity;
 
-  const sizeTotal = sizeBoard.slice(0, -2);
+  const [currentPlayer, setCurrentPlayer] = useState(player1Name);
 
   const handleSquareClick = () => {
     setCurrentPlayer((prevPlayer) =>
