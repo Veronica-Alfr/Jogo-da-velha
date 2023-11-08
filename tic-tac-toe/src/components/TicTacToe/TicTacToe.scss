@@ -46,9 +46,22 @@
 
       border: 0.001em solid black;
 
-      .X {
-        color: $blue;
+      .words {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        flex-direction: column;
+
+        margin-top: 25%;
       }
+
+      // .O {
+      //   color: $blue;
+      // }
+
+      // .X {
+      //   color: $red;
+      // }
     }
   }
 }
