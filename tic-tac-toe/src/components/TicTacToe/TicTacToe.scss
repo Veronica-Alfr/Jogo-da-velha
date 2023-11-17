@@ -46,14 +46,9 @@
 
       border: 0.001em solid black;
 
-      .words {
-        display: flex;
-        justify-self: center;
-        align-items: center;
-        flex-direction: column;
-
-        margin-top: 25%;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       // .O {
       //   color: $blue;
